@@ -1,0 +1,131 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 667px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto auto;
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 30px;
+
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+.product img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: auto;
+
+}
+
+.discreption .category {
+    font-family: 'Montserrat', sans-serif;
+    color: #6c7289;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 10px 24px 0 24px;
+}
+
+.discreption h1 {
+    font-family: 'Fraunces', serif;
+    padding: 0 24px 0 24px;
+}
+
+.discreption p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    padding: 0 24px 0 24px;
+    font-size: 14px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.price h1 {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    /* margin-right: 15px; */
+    padding: 5px 24px;
+}
+
+.price span {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    padding: 5px 0;
+
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+.cart a {
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    padding: 20px 0;
+    text-transform: capitalize;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(158, 36%, 37%);
+}
+
+.cart a:hover {
+    background-color: hsl(158, 42%, 18%);
+}
+
+.cart span {
+    margin-left: 5px;
+}
+
+@media (min-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width: 600px;
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .side-right {
+        padding-bottom: 30px;
+    }
+
+    .product {
+        height: 100%;
+    }
+
+    .product img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
